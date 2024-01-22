@@ -1,0 +1,120 @@
+.About {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+    justify-content: space-between;
+    
+    
+  }
+
+  .About button{
+
+    padding: 5px 10px;
+      border: none;
+      font-size: 17px;
+      color: #fff;
+      border-radius: 7px;
+      letter-spacing: 4px;
+      font-weight: 700;
+      text-transform: uppercase;
+      transition: 0.5s;
+      transition-property: box-shadow;
+      cursor: pointer;
+      margin: 10px;
+      background: #FF0000;
+      box-shadow: 0 0 25px #FF0000;
+  }
+  
+ 
+  
+  .text1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .About h1 {
+    font-size: 5rem;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .About h2 {
+    font-size: 3rem;
+    color: white;
+    cursor: pointer;
+    transition: color 0.9s ease;
+  }
+
+  .About h2:hover {
+    color: red;
+  }
+  
+  .About h3 {
+    font-size: 2rem;
+    color: white;
+  }
+  
+  .About img {
+    width: 30vw;
+    max-width: 100%; /* Make sure the image doesn't exceed its parent's width */
+    border-radius: 20px;
+    border: solid #E1BD01 7px;
+  }
+  
+  .About p {
+    font-size: 2.5rem;
+    text-align: center;
+    color: white;
+    padding-left: 150px; /* Adjust padding for smaller screens */
+    padding-right: 150px; /* Adjust padding for smaller screens */
+    
+  }
+
+  @media screen and (max-width: 1000px) {
+    .About p {
+        font-size: 1.7rem;
+        padding-left: 100px; /* Adjust padding for smaller screens */
+        padding-right: 100px; /* Adjust padding for smaller screens */
+      }
+
+      .About img {
+        width: 50vw; /* Adjust the width for smaller screens */
+      }
+    
+  }
+  
+  @media screen and (max-width: 768px) {
+    .About h1 {
+      font-size: 3rem;
+    }
+  
+    .About h2 {
+      font-size: 2rem;
+    }
+  
+    .About h3 {
+      font-size: 1.5rem;
+    }
+  
+    .About img {
+      width: 80vw; /* Adjust the width for smaller screens */
+    }
+  
+    .About p {
+      font-size: 1.5rem;
+      padding-left: 10px; /* Adjust padding for smaller screens */
+      padding-right: 10px; /* Adjust padding for smaller screens */
+    }
+  }
+
+  @media screen and (max-width: 405px) {
+  
+    .About h2 {
+      font-size: 1.5rem;
+    }
+
+  }

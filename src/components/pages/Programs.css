@@ -1,0 +1,97 @@
+.vidBackp video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -20;
+}
+
+.Prog {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.Prog h1 {
+  color: white;
+  font-size: 6rem;
+}
+
+.progCon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.progC {
+  background-color: rgba(225, 189, 1, 0.30);
+  margin: 15px;
+  padding: 15px;
+  border-radius: 20px;
+  transition: background-color 0.9s ease;
+  cursor: pointer;
+  width: 80%;
+  height: 12vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.progC:hover {
+  background-color: rgba(255, 0, 0, 0.32);
+}
+
+.progC h2,
+.progC p {
+  color: white;
+  font-weight: bold;
+}
+
+.progC h2 {
+  font-size: 2.5rem;
+}
+
+.progC p {
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .Prog h1 {
+    font-size: 4rem;
+  }
+
+  .progC {
+    width: 90%;
+    height: auto;
+  }
+
+  .progC h2 {
+    font-size: 2rem;
+  }
+
+  .progC p {
+    font-size: 0.8rem;
+  }
+}
+
+
+@media screen and (max-width: 536px) {
+  .Prog h1{
+    font-size: 3rem;
+  }
+}
+
+
+@media screen and (max-width: 382px) {
+  .Prog h1{
+    font-size: 2rem;
+  }
+}

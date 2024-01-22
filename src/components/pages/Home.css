@@ -1,0 +1,107 @@
+.vidBackg video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -20;
+  }
+  
+  .Home {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+
+  .Home img{
+    width: 200px;
+  }
+  
+  .mem {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  
+  .mem h3 {
+    color: white;
+    font-size: 1.5rem;
+  }
+  
+  .memCon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+  }
+  
+  .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .text h1 {
+    color: white;
+    font-size: 6rem;
+  }
+  
+  
+  
+  .shadow__btn {
+    padding: 10px 20px;
+    border: none;
+    font-size: 17px;
+    border-radius: 7px;
+    letter-spacing: 4px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.5s;
+    transition-property: box-shadow;
+    cursor: pointer;
+    margin-bottom: 50px;
+    background: #FF0000;
+    box-shadow: 0 0 25px #FF0000;
+    
+  }
+
+  .shadow__btn a{
+    color: white;
+    text-decoration: none;
+  }
+  
+ 
+  
+  .shadow__btn:hover {
+    box-shadow: 0 0 5px #FF0000,
+                0 0 25px #FF0000,
+                0 0 50px #FF0000,
+                0 0 100px #FF0000;
+  }
+  
+ 
+  @media screen and (max-width: 768px) {
+  
+  
+  
+    .mem h3 {
+      font-size: 1rem; 
+    }
+  
+    .text h1 {
+      font-size: 4rem; 
+    }
+  }
+
+
+  @media screen and (max-width: 435px) {
+    .text h1{
+        font-size: 3rem;
+    }
+  }

@@ -1,0 +1,106 @@
+@keyframes underlineAnimation {
+    0% {
+        text-decoration-color: transparent;
+    }
+    50% {
+        text-decoration-color: #E1BD01;
+    }
+    100% {
+        text-decoration-color: transparent;
+    }
+}
+
+a.active {
+    text-decoration: underline #E1BD01;
+    animation: underlineAnimation 1s infinite;
+    
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 100;
+    position: fixed;
+    width: 8%;
+    height: 100vh;
+    background-color: rgba(255, 0, 0, 0.32);
+    left: 0px;
+    top: 0px;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  font-size: 40px;
+  line-height: 110px;
+  position: relative;
+  left: 15.81px;
+  top: 426.04px;
+  width: 150px;
+  height: 40%;
+  transform-origin: 0 0;
+  transform: rotate(-90.797deg) scale(1, 1);
+    
+}
+
+nav ul li {
+    list-style: none;
+ 
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding: 0.5rem;
+    margin: 0 0.5rem;
+    border-radius: 0.5rem;
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+    
+}
+
+.burger-icon {
+    display: none;
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+   
+}
+
+
+
+
+
+
+@media screen and (max-width: 1052px) {
+    nav {
+        display: none;
+        background-color: red; 
+        transition: left 5s ease;
+        width: 30vw;
+        transition-property: box-shadow;
+        box-shadow: 0 0 25px #FF0000;
+    }
+
+   
+    .burger-icon {
+        display: block;
+        cursor: pointer;
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        z-index: 101; 
+    }
+
+  
+    nav.active {
+        display: flex;
+        left: 0;
+        text-decoration: none;
+    }
+
+   
+
+  
+}
